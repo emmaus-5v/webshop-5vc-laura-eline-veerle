@@ -9,7 +9,7 @@ of in Gitpod (gitpod is zonder mailen van orders en zonder permanent hosten):
 ### In mijn webshop vind je: 
 - *wat je verkoopt*
 ### Deze webshop is gemaakt door: 
-- *naam van leerling 1* 
+- Eline van de Weg
 -  *naam van leerling 2*
 
 # Mijn aanpak
