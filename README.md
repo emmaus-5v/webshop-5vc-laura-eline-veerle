@@ -11,6 +11,7 @@ of in Gitpod (gitpod is zonder mailen van orders en zonder permanent hosten):
 ### Deze webshop is gemaakt door: 
 - *naam van leerling 1* 
 -  *naam van leerling 2*
+- Laura Reket
 
 # Mijn aanpak
 Werk de planning af van boven naar beneden<br>
