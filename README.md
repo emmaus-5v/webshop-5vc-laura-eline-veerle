@@ -10,7 +10,7 @@ of in Gitpod (gitpod is zonder mailen van orders en zonder permanent hosten):
 - *wat je verkoopt*
 ### Deze webshop is gemaakt door: 
 - Eline van de Weg
--  Veerle Sparreboom
+- Veerle Sparreboom
 - Laura Reket
 
 # Mijn aanpak
