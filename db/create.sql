@@ -46,3 +46,22 @@ insert into products (name, description, code, price) values ('Velvet Goldmine',
 
 Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', '492662523-7', 14);
 
+CREATE TABLE geslacht (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  geslacht INTEGER
+);
+
+CREATE TABLE hoogte (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  hoogte INTEGER
+);
+
+CREATE TABLE verschillende_kleuren (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  kleur INTEGER
+);
+
+CREATE TABLE kleur_schoen (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  kleur_id INTEGER
+);
