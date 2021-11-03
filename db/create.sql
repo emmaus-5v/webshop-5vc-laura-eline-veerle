@@ -30,7 +30,7 @@ insert into products (name, description, code, price) values ('X-RAY 2 Square - 
 
 Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
 
-Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', '077030122-3', 59,99);
+Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', '077030122-3', 59.99);
 insert into products (name, description, code, price) values ('Nike Air Force 1 First Use - sneakers laag Nike', 'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
 
 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
