@@ -48,17 +48,17 @@ Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet 
 
 CREATE TABLE geslacht (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  geslacht INTEGER
+  geslacht TEXT
 );
 
 CREATE TABLE hoogte (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  hoogte INTEGER
+  hoogte TEXT
 );
 
 CREATE TABLE verschillende_kleuren (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  kleur INTEGER
+  kleur TEXT
 );
 
 CREATE TABLE kleur_schoen (
