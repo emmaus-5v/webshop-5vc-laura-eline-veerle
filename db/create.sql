@@ -8,9 +8,31 @@ CREATE TABLE products (
   code VARCHAR(15),
   name VARCHAR(255),
   description TEXT,
-  price NUMERIC(10, 2)
+  price NUMERIC(10, 2),
+  geslacht_id INTEGER
+  hoogte_id
 );
 
+CREATE TABLE geslacht (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  geslacht TEXT
+);
+
+CREATE TABLE hoogte (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  hoogte TEXT
+);
+
+CREATE TABLE verschillende_kleuren (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  kleur TEXT
+);
+
+CREATE TABLE kleur_schoen (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  kleur_id INTEGER,
+  schoen_id INTEGER
+);
 
 --
 -- populate with data
@@ -46,22 +68,3 @@ insert into products (name, description, code, price) values ('Velvet Goldmine',
 
 Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', '492662523-7', 14);
 
-CREATE TABLE geslacht (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  geslacht TEXT
-);
-
-CREATE TABLE hoogte (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  hoogte TEXT
-);
-
-CREATE TABLE verschillende_kleuren (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  kleur TEXT
-);
-
-CREATE TABLE kleur_schoen (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  kleur_id INTEGER
-);
