@@ -102,3 +102,21 @@ insert into kleur_schoen (schoen_id, kleur_id) values (4, 12);
 insert into kleur_schoen (schoen_id, kleur_id) values (4, 10);
 insert into kleur_schoen (schoen_id, kleur_id) values (4, 8);
 insert into kleur_schoen (schoen_id, kleur_id) values (4, 1);
+
+insert into kleur_schoen (schoen_id, kleur_id) values (5, 2);
+insert into kleur_schoen (schoen_id, kleur_id) values (5, 7);
+insert into kleur_schoen (schoen_id, kleur_id) values (5, 8);
+insert into kleur_schoen (schoen_id, kleur_id) values (5, 4);
+insert into kleur_schoen (schoen_id, kleur_id) values (5, 1);
+
+insert into kleur_schoen (schoen_id, kleur_id) values (6, 2);
+insert into kleur_schoen (schoen_id, kleur_id) values (6, 4);
+insert into kleur_schoen (schoen_id, kleur_id) values (6, 5);
+
+insert into kleur_schoen (schoen_id, kleur_id) values (7, 2);
+insert into kleur_schoen (schoen_id, kleur_id) values (7, 4);
+insert into kleur_schoen (schoen_id, kleur_id) values (7, 9);
+
+insert into kleur_schoen (schoen_id, kleur_id) values (8, 2);
+insert into kleur_schoen (schoen_id, kleur_id) values (8, 3);
+insert into kleur_schoen (schoen_id, kleur_id) values (8, 5);
