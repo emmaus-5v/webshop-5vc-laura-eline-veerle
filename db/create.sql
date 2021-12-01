@@ -15,7 +15,8 @@ CREATE TABLE products (
 
 CREATE TABLE geslacht (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  geslacht TEXT
+  geslacht_teken TEXT
+  geslacht_naam TEXT
 );
 
 CREATE TABLE hoogte (
@@ -30,8 +31,9 @@ CREATE TABLE verschillende_kleuren (
 
 CREATE TABLE kleur_schoen (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  kleur_id INTEGER,
-  schoen_id INTEGER
+  schoen_id INTEGER,
+  kleur_id INTEGER
+  
 );
 
 --
@@ -43,6 +45,7 @@ CREATE TABLE kleur_schoen (
 -- want different data? check: https://www.mockaroo.com/910b6c20
 --
 
+-- hoofd tabel met schoen info
 insert into products (name, description, code, price) values ('RS-FAST TECH UNISEX - sneakers laag Puma', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
 
 Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
@@ -74,3 +77,22 @@ Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet 
 insert into products (name, description, code, price) values ('adidas nienke', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.
 
 Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', '492662523-7', 14);
+
+-- geslacht tabel
+insert into geslacht (geslacht_teken, geslacht_naam) values  ('v', 'vrouw');
+insert into geslacht (geslacht_teken, geslacht_naam) values  ('m', 'man');
+insert into geslacht (geslacht_teken, geslacht_naam) values  ('uni', 'unisex');
+
+-- hoogte tabel
+insert into hoogte (hoogte) values ('laag');
+insert into hoogte (hoogte) values ('hoog');
+
+-- kleuren tabel
+insert into verschillende_kleuren (kleur) values ('meerkleurig');
+insert into verschillende_kleuren (kleur) values ('wit');
+insert into verschillende_kleuren (kleur) values ('zwart');
+insert into verschillende_kleuren (kleur) values ('beige');
+insert into verschillende_kleuren (kleur) values ('grijs');
+insert into verschillende_kleuren (kleur) values ('oranje');
+
+-- kleur van schoen tabel
