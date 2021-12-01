@@ -74,6 +74,31 @@ insert into verschillende_kleuren (kleur) values ('zwart');
 insert into verschillende_kleuren (kleur) values ('beige');
 insert into verschillende_kleuren (kleur) values ('grijs');
 insert into verschillende_kleuren (kleur) values ('oranje');
+insert into verschillende_kleuren (kleur) values ('groen');
+insert into verschillende_kleuren (kleur) values ('roze');
+insert into verschillende_kleuren (kleur) values ('bruin');
+insert into verschillende_kleuren (kleur) values ('blauw');
+insert into verschillende_kleuren (kleur) values ('rood');
+insert into verschillende_kleuren (kleur) values ('geel');
 
 -- kleur van schoen tabel
+insert into kleur_schoen (schoen_id, kleur_id) values (1, 2);
+insert into kleur_schoen (schoen_id, kleur_id) values (1, 3);
+insert into kleur_schoen (schoen_id, kleur_id) values (1, 5);
+insert into kleur_schoen (schoen_id, kleur_id) values (1, 7);
 
+insert into kleur_schoen (schoen_id, kleur_id) values (2, 2);
+insert into kleur_schoen (schoen_id, kleur_id) values (2, 10);
+insert into kleur_schoen (schoen_id, kleur_id) values (2, 6);
+insert into kleur_schoen (schoen_id, kleur_id) values (2, 11);
+insert into kleur_schoen (schoen_id, kleur_id) values (2, 1);
+
+insert into kleur_schoen (schoen_id, kleur_id) values (3, 2);
+insert into kleur_schoen (schoen_id, kleur_id) values (3, 4);
+insert into kleur_schoen (schoen_id, kleur_id) values (3, 6);
+
+insert into kleur_schoen (schoen_id, kleur_id) values (4, 2);
+insert into kleur_schoen (schoen_id, kleur_id) values (4, 12);
+insert into kleur_schoen (schoen_id, kleur_id) values (4, 10);
+insert into kleur_schoen (schoen_id, kleur_id) values (4, 8);
+insert into kleur_schoen (schoen_id, kleur_id) values (4, 1);
