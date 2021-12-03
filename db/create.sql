@@ -58,6 +58,7 @@ insert into products (name, description, code, price, geslacht_id, hoogte_id) va
 insert into products (name, description, code, price, geslacht_id, hoogte_id) values ('Vans bold NI cheetah - sneakers laag', 'schoen van robin', '592662523-7', 59.99, 1, 1);
 insert into products (name, description, code, price, geslacht_id, hoogte_id) values ('Blazer Low 77 VNTG - Nike', 'schoen van laura', '686928463-6', 89.99, 3, 1);
 insert into products (name, description, code, price, geslacht_id, hoogte_id) values ('Air Jordan 1 - Nike', 'schoen van elise', '786928463-6', 199.99, 3, 2);
+insert into products (name, description, code, price, geslacht_id, hoogte_id) values ('OZWEEGO - sneakers laag Adidas Originals', 'schoen van Dzana', '5839678399-5', 99.95, 3, 1);
 
 -- geslacht tabel
 insert into geslacht (geslacht_teken, geslacht_naam) values  ('v', 'vrouw');
@@ -123,6 +124,10 @@ insert into kleur_schoen (schoen_id, kleur_id) values (8, 3);
 insert into kleur_schoen (schoen_id, kleur_id) values (8, 5);
 
 insert into kleur_schoen (schoen_id, kleur_id) values (9, 2);
-insert into kleur_schoen (schoen_id, kleur_id) values (8, 3);
-insert into kleur_schoen (schoen_id, kleur_id) values (8, 5);
+insert into kleur_schoen (schoen_id, kleur_id) values (9, 3);
+insert into kleur_schoen (schoen_id, kleur_id) values (9, 5);
+
+insert into kleur_schoen (schoen_id, kleur_id) values (10, 2);
+insert into kleur_schoen (schoen_id, kleur_id) values (10, 4);
+insert into kleur_schoen (schoen_id, kleur_id) values (10, 5);
 
