@@ -138,4 +138,4 @@ insert into kleur_schoen (schoen_id, kleur_id) values (11, 2);
 
 insert into kleur_schoen (schoen_id, kleur_id) values (12, 2);
 insert into kleur_schoen (schoen_id, kleur_id) values (12, 11);
-insert into kleur_schoen (schoen_id, kleur_id) values (12, 3)
+insert into kleur_schoen (schoen_id, kleur_id) values (12, 3);
