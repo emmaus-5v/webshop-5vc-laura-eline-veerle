@@ -70,10 +70,10 @@ function getProducts(request, response) {
   const category_id = parseInt(request.query.category)
   let data = []
   if (category_id > 0) {
-    const sqlOpdracht = db.prepare('SELECT * FROM products WHERE category_id = ? ORDER BY id ASC')
+    const sqlOpdracht = db.prepare('SELECT * FROM products WHERE category_id = ? ORDER BY name ASC;') // SELECT product.id as id, product.description, product.code, product.price, geslacht.naam, hoogte.naam FROM products WHERE category_id = ? JOIN geslacht ON geslacht.id = products.geslacht_id JOIN hoogte ON hoogte.id = products.hoogte_id ORDER BY name ASC ||| OUDE = SELECT * FROM products WHERE category_id = ? ORDER BY name ASC
     data = sqlOpdracht.all(category_id)
   } else {
-    const sqlOpdracht = db.prepare('SELECT * FROM products ORDER BY name ASC') //SELECT * FROM products JOIN geslacht ON geslacht.id = products.geslacht_id JOIN hoogte ON hoogte.id = products.hoogte_id;
+    const sqlOpdracht = db.prepare('SELECT * FROM products ORDER BY name ASC;') //SELECT product.id as id, product.description, product.code, product.price, geslacht.naam, hoogte.naam FROM products JOIN geslacht ON geslacht.id = products.geslacht_id JOIN hoogte ON hoogte.id = products.hoogte_id ORDER BY name ASC; ||| OUDE = SELECT * FROM products ORDER BY name ASC
     data = sqlOpdracht.all()
   }
   // console.log(JSON.stringify(data, null, 2))
