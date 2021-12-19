@@ -88,6 +88,8 @@
                 clone.querySelector(".product_title").textContent += product.name
                 clone.querySelector(".product_description").textContent = product.description
                 clone.querySelector(".product_price").textContent = `€ ${product.price.toFixed(2)}`
+                clone.querySelector(".product_hoogte").textContent = hoogte.hoogte_naam
+                clone.querySelector(".product_geslacht").textContent = geslacht.geslacht_naam
                 clone.querySelector(".product_code").textContent = product.code
                 clone.querySelector(".product_id").value = product.id
                 clone.querySelector(".product_id").dataset.json = JSON.stringify(product)
