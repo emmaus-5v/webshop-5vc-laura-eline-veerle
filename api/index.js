@@ -75,6 +75,8 @@ function getProducts(request, response) {
   } else {
     const sqlOpdracht = db.prepare('SELECT products.id as id, products.name, products.description, products.code, products.price, geslacht.geslacht_naam, hoogte.hoogte FROM products JOIN geslacht ON geslacht.id = products.geslacht_id JOIN hoogte ON hoogte.id = products.hoogte_id ORDER BY name ASC;') //SELECT products.id as id, products.name, products.description, products.code, products.price, geslacht.geslacht_naam, hoogte.hoogte FROM products JOIN geslacht ON geslacht.id = products.geslacht_id JOIN hoogte ON hoogte.id = products.hoogte_id ORDER BY name ASC; ||| OUDE = SELECT * FROM products ORDER BY name ASC;
   }
+  const data = sqlOpdracht.all()
+  
   // console.log(JSON.stringify(data, null, 2)) 
   response.status(200).send(data)
   console.log('API verstuurt /api/products/')
