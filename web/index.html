@@ -125,7 +125,9 @@
               clone.querySelector(".product_title").textContent = name
               clone.querySelector(".product_description").textContent =`${product.description.substr(0, 100)}...`
               clone.querySelector(".product_price").textContent = `€ ${product.price.toFixed(2)}`
-              clone.querySelector(".product_code").textContent = product.code
+              clone.querySelector(".product_hoogte").textContent = hoogte.hoogte_naam
+              clone.querySelector(".product_geslacht").textContent = geslacht.geslacht_naam
+			  clone.querySelector(".product_code").textContent = product.code
               clone.querySelector(".product_id").value = product.id
               clone.querySelector(".product_id").dataset.json = JSON.stringify(product)
               clone.querySelector(".product_image").src =`/images/${product.id}.jpg`
