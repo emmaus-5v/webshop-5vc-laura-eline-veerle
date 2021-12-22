@@ -28,8 +28,8 @@
         <!-- inhoud winkelwagen -->
         <div class="container" id="index">
           <h4>Winkelwagen</h4>
-          <p>Hier zie je de lijst met artikelen uit je winkelwagen.</p>
-          <p>Door op plus en min te drukken kun je het aantal per artikel aanpassen</p>   
+          <p>Dit zijn de artikelen in je winkelwagen:</p>
+          <p>Door op plus en min te drukken kun je het aantal per artikel aanpassen.</p>   
           <!-- melding die wordt getoond als je winkelwagen leeg is -->
           <div id="show_when_empty_basket">
           <div class="alert alert-info" > 
@@ -66,7 +66,7 @@
 
          <!-- totaal bedrag winkelwagen en knop voor Winkelwagen legen en knop voor Verder winkelen-->
         <div class="container" id="totaal">
-            <p>Totaal bedrag: € <span class="sum_products">0.00</span></p>
+            <p>Totaalprijs (inclusief btw): € <span class="sum_products">0.00</span></p>
             <p>
               <button class="btn btn-outline-dark shop-button" onClick="if(confirm('Winkelwagen legen?')) { emptyBasket(); location.href='basket.html' }">Winkelwagen legen</button> <!-- beetje lomp om hele pagina opnieuw te laden na legen -->
               <button class="btn btn-outline-dark shop-button" onClick="location.href='index.html'">Verder winkelen</button>
@@ -75,7 +75,7 @@
 
         <!-- bestelformulier -->
         <form class="container" id="orderForm">
-          <h4>Vul hieronder je adresgegevens in</h4>
+          <h4>Vul hieronder je gegevens in:</h4>
           <div class="form-group">
             <label for="naam">Naam</label>
               <input required
@@ -133,8 +133,7 @@
                    oninvalid="this.setCustomValidity('Geen geldig mobiel nummer opgegeven')" 
                    onchange="this.setCustomValidity('')">
           </div>
-          <p>...en klik op bestellen<p>
-          <p>Als ik je bestelling gezien heb, dan ontvang je van mij een Tikkie. Zodra je betaald hebt, stuur ik de spullen op.</p>
+          <p>Je ontvangt een Tikkie van ons zodra je een bestelling hebt geplaatst. Als deze Tikkie betaald is, sturen wij jouw bestelling naar je op.</p>
           <button type="button" class="btn btn-outline-success shop-button" onclick="checkout()">Bestellen</button>
         </form>
         
@@ -142,13 +141,13 @@
         <div class="container" id="checkout_status">
              <template id="checkout_success">
                <div class="alert alert-success"> 
-                 Je bestelling is geplaatst en een bevestigingsmail is verzonden.<br>
+                 Je bestelling is geplaatst! Het kan enkele minuten duren voor je een bevestigingsmail ontvangt.<br>
                  Je ordernummer is <span class="checkout_ordernumber"></span> 
                </div>
              </template>
              <template id="checkout_failes">
                <div class="alert alert-danger">
-                 Je bestelling kon niet worden geplaatst, neem contact op met de shop<br>
+                 Je bestelling kon niet worden geplaatst, neem contact op met de shop.<br>
                  Foutmelding:<br>
                  <span class="checkout_error_message"></span>
                </div>
@@ -158,7 +157,7 @@
     </main>
     <footer>
       <hr>
-      <p>Deze website is gemaakt door <naam leerling> voor het vak informatica op het Emmauscollege Rotterdam. Laatste bijgewerkt 1 oktober 2020.</p>
+      <p>Deze website is gemaakt door Veerle Sparreboom, Eline van de Weg en Laura Reket voor het vak informatica op het Emmauscollege Rotterdam. Laatste bijgewerkt 1 oktober 2020.</p>
     </footer>
 
     <script src="/js/basket.js"></script>
