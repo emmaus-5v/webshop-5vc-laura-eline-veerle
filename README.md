@@ -35,7 +35,7 @@ Stap 4: Website aanpassen
 - [x] Pas de website aan, zodat alle informatie getoond wordt.
 
 Stap x: Webshop verder verbeteren
-- [ ] Herhaal stap 2 t/m 4 om je webshop verder te verbeteren. 
+- [x] Herhaal stap 2 t/m 4 om je webshop verder te verbeteren. 
 Voor en goed cijfer is het belangrijk dat je laat zien dat je uitstekend begrepen hebt hoe je een webshop moet opzetten.
 
 
