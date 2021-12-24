@@ -27,16 +27,16 @@ footer {
 
 .card {
   width:230px; 
-  height: 700px; 
+  height: 770px; 
   margin-bottom: 30px
 }
 
 .card-header {
-  height: 7em;
+  height: 5em;
 }
 
 .card-text {
-  min-height:7em
+  min-height:4em
 }
 
 /* index page */
