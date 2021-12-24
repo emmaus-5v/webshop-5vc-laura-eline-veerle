@@ -24,6 +24,8 @@ Stap 1: Start
 
 Stap 2: Database opzetten 
 - [x] Maak tabellen en velden (CREATE TABLE commando) in je database waarin alle informatie kan worden opgeslagen die je over je producten wilt tonen.<br>
+- [x] De n:m relatie tabel staat erin
+- [x] De 1:m realtie tabellen staan erin
 Tip: je kunt een multipliciteitendiagram gebruiken als tussenstap voor je database-ontwerp
 - [x] Vul de tabellen met informatie (INSERT commando)
 - [x] Voeg eventueel plaatjes toe (web/images map)
@@ -36,6 +38,7 @@ Stap 4: Website aanpassen
 
 Stap x: Webshop verder verbeteren
 - [x] Herhaal stap 2 t/m 4 om je webshop verder te verbeteren. 
+- [x] Werken aan uiterlijk van website
 Voor en goed cijfer is het belangrijk dat je laat zien dat je uitstekend begrepen hebt hoe je een webshop moet opzetten.
 
 
