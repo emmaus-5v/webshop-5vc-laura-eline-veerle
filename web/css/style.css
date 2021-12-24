@@ -27,7 +27,7 @@ footer {
 
 .card {
   width:230px; 
-  height: 770px; 
+  height: 770px; /* de grote verschilt per laptop/computer. Deze grote deed het op de laptop van een van ons dus misschien vallen sommige dingen bij u buiten het kader. */
   margin-bottom: 30px
 }
 
