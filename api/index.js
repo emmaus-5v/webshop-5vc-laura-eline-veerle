@@ -70,13 +70,13 @@ function getProducts(request, response) {
   const category_id = parseInt(request.query.category)
   let data = []
   if (category_id > 0) {
-    const sqlOpdracht = db.prepare('SELECT products.id as id, products.name, products.description, products.code, products.price, geslacht.geslacht_naam, hoogte.hoogte FROM products WHERE category_id = ? JOIN geslacht ON geslacht.id = products.geslacht_id JOIN hoogte ON hoogte.id = products.hoogte_id ORDER BY name ASC;') // SELECT products.id as id, products.name, products.description, products.code, products.price, geslacht.geslacht_naam, hoogte.hoogte FROM products WHERE category_id = ? JOIN geslacht ON geslacht.id = products.geslacht_id JOIN hoogte ON hoogte.id = products.hoogte_id ORDER BY name ASC; ||| OUDE = SELECT * FROM products WHERE category_id = ? ORDER BY name ASC;
+    const sqlOpdracht = db.prepare('SELECT products.id as id, products.name, products.description, products.code, products.price, geslacht.geslacht_naam, hoogte.hoogte FROM products WHERE category_id = ? JOIN geslacht ON geslacht.id = products.geslacht_id JOIN hoogte ON hoogte.id = products.hoogte_id ORDER BY name ASC;') 
     data = sqlOpdracht.all(category_id)
   } else {
-    const sqlOpdracht = db.prepare('SELECT products.id as id, products.name, products.description, products.code, products.price, geslacht.geslacht_naam, hoogte.hoogte FROM products JOIN geslacht ON geslacht.id = products.geslacht_id JOIN hoogte ON hoogte.id = products.hoogte_id ORDER BY name ASC;') //SELECT products.id as id, products.name, products.description, products.code, products.price, geslacht.geslacht_naam, hoogte.hoogte FROM products JOIN geslacht ON geslacht.id = products.geslacht_id JOIN hoogte ON hoogte.id = products.hoogte_id ORDER BY name ASC; ||| OUDE = SELECT * FROM products ORDER BY name ASC;
+    const sqlOpdracht = db.prepare('SELECT products.id as id, products.name, products.description, products.code, products.price, geslacht.geslacht_naam, hoogte.hoogte FROM products JOIN geslacht ON geslacht.id = products.geslacht_id JOIN hoogte ON hoogte.id = products.hoogte_id ORDER BY name ASC;') 
     data = sqlOpdracht.all ()
   }
-  
+  // meneer, we wilde ook de kleuren met de api versturen door middel van SELECT products.id as id, products.name, products.description, products.code, products.price, geslacht.geslacht_naam, hoogte.hoogte, verschillende_kleuren.kleur FROM products JOIN geslacht ON geslacht.id = products.geslacht_id JOIN hoogte ON hoogte.id = products.hoogte_id JOIN kleur_schoen ON kleur_schoen.schoen_id = products.id JOIN verschillende_kleuren ON verschillende_kleuren.id = kleur_schoen.kleur_id ORDER BY name ASC;, maar als we dit deden kwam elk product meerdere keren op de website te staan omdat elke schoen meerdere kleuren had. 
 
   // console.log(JSON.stringify(data, null, 2)) 
   response.status(200).send(data)
